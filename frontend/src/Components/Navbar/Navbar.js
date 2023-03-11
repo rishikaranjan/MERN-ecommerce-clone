@@ -120,7 +120,7 @@ export const Navbar = () => {
 
                     <div className="profileIcon"><PersonOutlineOutlinedIcon/></div>
 
-                    <div>{userInfo.name}</div> 
+                    <div>Profile</div> 
 
                     
 
@@ -129,7 +129,7 @@ export const Navbar = () => {
                                 userInfo ? 
                                 (
                                 <>
-                                    <Link to = '/profile'>My Profile</Link>
+                                    <Link to = '/profile'>{userInfo.name}</Link>
 
                                     <Link to = '/orderhistory'>Order History</Link>
 
