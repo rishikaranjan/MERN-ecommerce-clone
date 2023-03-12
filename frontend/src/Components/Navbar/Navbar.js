@@ -114,42 +114,7 @@ export const Navbar = () => {
                 </div>
 
 
-                <div className="navbar__profile">
 
-                <div className='dropdown'>
-
-                    <div className="profileIcon"><PersonOutlineOutlinedIcon/></div>
-
-                    <div>Profile</div> 
-
-                    
-
-                        <div class="dropdown-content">
-                            {
-                                userInfo ? 
-                                (
-                                <>
-                                    <Link to = '/profile'>{userInfo.name}</Link>
-
-                                    <Link to = '/orderhistory'>Order History</Link>
-
-                                    <div onClick={signoutHandler}>Sign Out</div>
-
-                                </>
-
-                                ) : 
-
-                                (
-                                    <Link to='/signin'>Sign In</Link>
-
-                                )
-                            }
-                            
-                        </div>
-
-                    </div>
-
-                </div>
 
 
                 
