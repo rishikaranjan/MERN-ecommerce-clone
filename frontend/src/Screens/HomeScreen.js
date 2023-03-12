@@ -45,7 +45,7 @@ export const HomeScreen = () => {
 
             try {
 
-                const result = await axios.get('/api/products'); 
+                const result = await axios.get('https://ecommerce-myntra-clone.onrender.com/api/products'); 
                 dispatch({type: 'FETCH_SUCCESS', payload: result.data});
 
             }
